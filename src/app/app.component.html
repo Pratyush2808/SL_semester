@@ -1,7 +1,11 @@
 <mat-toolbar color="primary">
     <div>
       <p>Feedback</p>
+      <a routerLink="/">FeedbackCreate</a>
+      <a routerLink='/list'>FeedbackList</a>
     </div>
   </mat-toolbar>
-<app-feedback-create></app-feedback-create>
-<app-feedback-list></app-feedback-list>
+<router-outlet></router-outlet>
+<!--<app-feedback-create></app-feedback-create>
+<app-feedback-list></app-feedback-list>-->
+
