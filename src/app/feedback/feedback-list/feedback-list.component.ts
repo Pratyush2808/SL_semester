@@ -7,6 +7,9 @@ import { FeedbackService } from '../feedback.service';
 })
 export class FeedbackListComponent implements OnInit {
   feedbackList = [];
+  ans1: string;
+  ans2: string;
+  
   constructor(private feedbackService: FeedbackService) { }
 
   ngOnInit(): void {
@@ -15,7 +18,8 @@ export class FeedbackListComponent implements OnInit {
       this.feedbackList = data;
     })
   }
-  onDelete(id) {
-    this.feedbackService.delete(id);
+  onSubmit() {
+
+    }
   }
-}
+

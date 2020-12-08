@@ -5,7 +5,7 @@ import { FeedbackListComponent } from './feedback/feedback-list/feedback-list.co
 
 const routes: Routes = [
   { path: '', component: FeedbackCreateComponent },
-  { path: 'list', component: FeedbackListComponent },
+  { path: 'quiz', component: FeedbackListComponent },
 
   // otherwise redirect to home
   { path: '**', redirectTo: '' }

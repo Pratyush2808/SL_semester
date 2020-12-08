@@ -1,12 +1,40 @@
 <mat-card *ngIf="feedbackList.length > 0">
     <mat-list role="list">
-      <mat-list-item *ngFor="let feedbackItem of feedbackList">
+      <div *ngFor="let feedbackItem of feedbackList">
         <div class="list-item">
-          <div>{{ feedbackItem.feedback }}</div>
-          <div>
-            <mat-icon class="delete" (click)="onDelete(feedbackItem._id)">delete</mat-icon>
-          </div>
+          <div><h1>QUIZ: {{ feedbackItem.qname }}</h1></div>
         </div>
-      </mat-list-item>
+        <form action="" method="post">
+        <mat-card >
+        <div>
+          <p>Question1: {{ feedbackItem.question1 }}</p>
+          <input type="radio" id="" name="q1" value="q1op1">
+          <label for="q1op1">{{ feedbackItem.q1op1 }}</label><br>
+          <input type="radio" id="" name="q1" value="q1op2">
+          <label for="q1op2">{{ feedbackItem.q1op2 }}</label><br>
+          <input type="radio" id="" name="q1" value="q1op3">
+          <label for="q1op3">{{ feedbackItem.q1op3 }}</label><br>
+          <input type="radio" id="" name="q1" value="q1op4">
+          <label for="q1op4">{{ feedbackItem.q1op4 }}</label><br>
+        </div>
+        </mat-card>
+        <mat-card>
+
+        <div>
+            <p>Question2: {{ feedbackItem.question2 }}</p>
+            <input type="radio" id="" name="q2" value="q2op1">
+            <label for="q2op1">{{ feedbackItem.q2op1 }}</label><br>
+            <input type="radio" id="" name="q2" value="q2op2">
+            <label for="q2op2">{{ feedbackItem.q2op2 }}</label><br>
+            <input type="radio" id="" name="q2" value="q2op3">
+            <label for="q2op3">{{ feedbackItem.q2op3 }}</label><br>
+            <input type="radio" id="" name="q2" value="q2op4">
+            <label for="q2op4">{{ feedbackItem.q2op4 }}</label><br>
+          </div>
+        </mat-card>
+        <button mat-raised-button color="accent" type="submit" (click)="onSubmit()">Submit Quiz</button>
+        </form>
+      </div>
+      
     </mat-list>
   </mat-card>

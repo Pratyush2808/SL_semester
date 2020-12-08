@@ -123,5 +123,8 @@
       }
     }
   },
-  "defaultProject": "feedback-app"
+  "defaultProject": "feedback-app",
+  "cli": {
+    "analytics": "c60fd3ff-a48c-4697-ab04-bb881872877b"
+  }
 }

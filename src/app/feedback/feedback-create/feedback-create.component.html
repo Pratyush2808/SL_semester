@@ -1,6 +1,58 @@
 <mat-card>
+  <h2>Enter Quiz Details:</h2>>
     <mat-form-field>
-      <input type="text" matInput placeholder="Feedback" [(ngModel)]="feedback">
+      <input type="text" matInput placeholder="Quiz Name" [(ngModel)]="feedback">
     </mat-form-field>
-    <button mat-raised-button color="accent" (click)="onSubmit()">Add Feedback</button>
+    <mat-form-field>
+      <input type="text" matInput placeholder="Quiz id" [(ngModel)]="qid">
+    </mat-form-field>
+    <mat-form-field>
+      <input type="text" matInput placeholder="Max Marks" [(ngModel)]="mmarks">
+    </mat-form-field>
+
+    
   </mat-card>
+  
+  <mat-card>
+      <h2>Enter Question Details:</h2>>
+    <mat-form-field>
+      <input type="text" matInput placeholder="Question 1" [(ngModel)]="question1">
+    </mat-form-field>
+    <mat-form-field>
+      <input type="text" matInput placeholder="q1op1" [(ngModel)]="q1op1">
+    </mat-form-field>
+    <mat-form-field>
+      <input type="text" matInput placeholder="q1op2" [(ngModel)]="q1op2">
+    </mat-form-field>
+    <mat-form-field>
+      <input type="text" matInput placeholder="q1op3" [(ngModel)]="q1op3">
+    </mat-form-field>
+    <mat-form-field>
+      <input type="text" matInput placeholder="q1op4" [(ngModel)]="q1op4">
+    </mat-form-field>
+    <mat-form-field>
+      <input type="text" matInput placeholder="q1cop" [(ngModel)]="q1cop">
+    </mat-form-field>
+    </mat-card>>
+
+    <mat-card>
+      <mat-form-field>
+        <input type="text" matInput placeholder="Question 2" [(ngModel)]="question2">
+      </mat-form-field>
+      <mat-form-field>
+        <input type="text" matInput placeholder="q2op1" [(ngModel)]="q2op1">
+      </mat-form-field>
+      <mat-form-field>
+        <input type="text" matInput placeholder="q2op2" [(ngModel)]="q2op2">
+      </mat-form-field>
+      <mat-form-field>
+        <input type="text" matInput placeholder="q2op3" [(ngModel)]="q2op3">
+      </mat-form-field>
+      <mat-form-field>
+        <input type="text" matInput placeholder="q2op4" [(ngModel)]="q2op4">
+      </mat-form-field>
+      <mat-form-field>
+        <input type="text" matInput placeholder="q2cop" [(ngModel)]="q2cop">
+      </mat-form-field>
+  </mat-card>
+  <button mat-raised-button color="accent" (click)="onSubmit()">Add Quiz</button>
